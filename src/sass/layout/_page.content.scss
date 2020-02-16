@@ -1,0 +1,142 @@
+// Page: Content
+// -----------------------------------------------------------------------------
+.about-us {
+  position: relative;
+  color: $dark-color;
+  text-align: center;
+  padding: 50px 0;
+  & .decoration {
+    &:after {
+      content: " ";
+      position: relative;
+      top: -5px;
+      left: 50%;
+      margin-left: -20px;
+      display: block;
+      width: 40px;
+      height: 1px;
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  & .icon {
+    display: inline-block;
+    background-color: $secondary-background;
+    padding: 30px;
+    border-radius: 50%;
+    &:hover {
+      background-color: $main-color;
+      cursor: pointer;
+      transition: all 0.2s ease 0s;
+    }
+  }
+}
+
+.foto {
+  position: relative;
+  color: $dark-color;
+  text-align: left;
+  background-color: $secondary-background;
+  padding: 50px 0;
+
+  & img {
+    width: 100%;
+  }
+}
+
+
+.mac {
+  position: relative;
+  color: $dark-color;
+  text-align: left;
+  padding: 50px 0;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.opinion {
+  background-size: cover;
+  background-attachment: inherit;
+  text-align: center;
+  position: relative;
+  color: $light-color;
+  background-image: url(../img/opinion-back.jpg);
+  padding: 100px 0;
+  & .paragraph-custom {
+    font-size: 20px;
+    margin: 1em 0;
+    & .color-text {
+      color: $main-color;
+    }
+  }
+
+  & .slider-arrow-left {
+    left: 5%;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  & .slider-arrow-right {
+    right: 5%;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  & .pagination {
+    justify-content: center;
+    margin-top: 30px;
+    list-style: none;
+
+    & .pagination-list {
+      min-width: 15px;
+      min-height: 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      border-width: 2px;
+      border-style: solid;
+      border-color: initial;
+      border-image: initial;
+      margin: 5px;
+      &:hover {
+        background-color: $light-color;
+      }
+    }
+  }
+}
+.our-service {
+  position: relative;
+  color: $dark-color;
+  background-color: $secondary-background;
+  text-align: center;
+  padding: 50px 0;
+  & .icon-our-service {
+    margin-left: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 50%;
+  }
+  & .decoration {
+    &:after {
+      content: " ";
+      position: relative;
+      top: -5px;
+      left: 50%;
+      margin-left: -20px;
+      display: block;
+      width: 40px;
+      height: 1px;
+      border-bottom: 2px solid $main-color;
+    }
+  }
+}

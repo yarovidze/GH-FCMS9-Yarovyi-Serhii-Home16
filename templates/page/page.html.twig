@@ -1,0 +1,144 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+
+<div class="page">
+
+
+  <section class="main-header">
+
+    {% embed '@radix/navbar/navbar.twig' with {
+      placement: 'sticky-top',
+      container: 'fixed',
+      color: 'light',
+    } %}
+
+      {% block branding %}
+        {% if page.navbar_branding %}
+          {{ page.navbar_branding }}
+        {% endif %}
+      {% endblock %}
+
+      {% block left %}
+        {% if page.navbar_left %}
+          <div class="mr-auto">
+            {{ page.navbar_left }}
+          </div>
+        {% endif %}
+      {% endblock %}
+
+      {% block right %}
+        {% if page.navbar_right %}
+          {{ page.navbar_right }}
+        {% endif %}
+      {% endblock %}
+    {% endembed %}
+
+      {% if page.main_head %}
+        <div class="container">
+          {{ page.main_head }}
+        </div>
+      {% endif %}
+  </section>
+
+  <section class="about-us">
+    <div class="container">
+      {% if page.about_us_header %}
+        {{ page.about_us_header }}
+      {% endif %}
+{#      <div class="row">#}
+{#        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">#}
+{#          {% if page.about_us_block1 %}#}
+{#            {{ page.about_us_block1 }}#}
+{#          {% endif %}#}
+{#        </div>#}
+{#        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">#}
+{#          {% if page.about_us_block2 %}#}
+{#            {{ page.about_us_block2 }}#}
+{#          {% endif %}#}
+{#        </div>#}
+{#        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">#}
+{#          {% if page.about_us_block3 %}#}
+{#            {{ page.about_us_block3 }}#}
+{#          {% endif %}#}
+{#        </div>#}
+{#        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">#}
+{#          {% if page.about_us_block4 %}#}
+{#            {{ page.about_us_block4 }}#}
+{#          {% endif %}#}
+{#        </div>#}
+{#      </div>#}
+    </div>
+  </section>
+  <section class="foto">
+    <div class="container">
+      {% if page.foto_section %}
+        {{ page.foto_section }}
+      {% endif %}
+    </div>
+  </section>
+  <section class="mac">
+    <div class="container">
+      {% if page.mac_section %}
+        {{ page.mac_section }}
+      {% endif %}
+    </div>
+  </section>
+  <section class="opinion">
+    <div class="container">
+      {% if page.opinion_section %}
+        {{ page.opinion_section }}
+      {% endif %}
+    </div>
+  </section>
+  <section class="our-service">
+    <div class="container">
+      {% if page.our_service_header %}
+        {{ page.our_service_header }}
+      {% endif %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% if page.our_service_block1 %}
+            {{ page.our_service_block1 }}
+          {% endif %}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% if page.our_service_block2 %}
+            {{ page.our_service_block2 }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {#  <main class="pt-5 pb-5">#}
+  {#    {% if page.header %}#}
+  {#      <header class="page__header mb-3">#}
+  {#        <div class="container">#}
+  {#          {{ page.header }}#}
+  {#        </div>#}
+  {#      </header>#}
+  {#    {% endif %}#}
+
+  {#    {% if page.content %}#}
+  {#      <div class="page__content">#}
+  {#        <div class="container">#}
+  {#          {{ page.content }}#}
+  {#        </div>#}
+  {#      </div>#}
+  {#    {% endif %}#}
+  {#  </main>#}
+
+  {#  {% if page.footer %}#}
+  {#    <footer class="page__footer">#}
+  {#      <div class="container">#}
+  {#        <div class="d-flex justify-content-md-between align-items-md-center">#}
+  {#          {{ page.footer }}#}
+  {#        </div>#}
+  {#      </div>#}
+  {#    </footer>#}
+  {#  {% endif %}#}
+</div>
